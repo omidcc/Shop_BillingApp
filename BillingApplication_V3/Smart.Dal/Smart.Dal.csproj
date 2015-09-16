@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4AD68FB4-6B3D-46EC-8B64-9D261C0384E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Smart.Dal</RootNamespace>
+    <AssemblyName>Smart.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountBalanceDal.cs" />
+    <Compile Include="AppFunctionalityDal.cs" />
+    <Compile Include="ApplicationSetupDal.cs" />
+    <Compile Include="AppModuleDal.cs" />
+    <Compile Include="AppointmentDal.cs" />
+    <Compile Include="AppPermissionDal.cs" />
+    <Compile Include="Base\AccountBalanceDalBase.cs" />
+    <Compile Include="Base\AppFunctionalityDalBase.cs" />
+    <Compile Include="Base\ApplicationSetupDalBase.cs" />
+    <Compile Include="Base\AppModuleDalBase.cs" />
+    <Compile Include="Base\AppointmentDalBase.cs" />
+    <Compile Include="Base\AppPermissionDalBase.cs" />
+    <Compile Include="Base\BillDetailDalBase.cs" />
+    <Compile Include="Base\BillMasterDalBase.cs" />
+    <Compile Include="Base\ChairListDalBase.cs" />
+    <Compile Include="Base\CommissionSetupDalBase.cs" />
+    <Compile Include="Base\CompanyDalBase.cs" />
+    <Compile Include="Base\CorporationsDalBase.cs" />
+    <Compile Include="Base\DoctorDalBase.cs" />
+    <Compile Include="Base\DueInstallmentDalBase.cs" />
+    <Compile Include="Base\EmployeeDalBase.cs" />
+    <Compile Include="Base\FormListDalBase.cs" />
+    <Compile Include="Base\LateChargeDalBase.cs" />
+    <Compile Include="Base\ListTableDalBase.cs" />
+    <Compile Include="Base\MarketDalBase.cs" />
+    <Compile Include="Base\PatientDalBase.cs" />
+    <Compile Include="Base\ReceiptDetailDalBase.cs" />
+    <Compile Include="Base\ReceiptMasterDalBase.cs" />
+    <Compile Include="Base\ServiceDalBase.cs" />
+    <Compile Include="Base\ServiceInvoiceMasterDalBase.cs" />
+    <Compile Include="Base\ShopCategoryDalBase.cs" />
+    <Compile Include="Base\ShopDalBase.cs" />
+    <Compile Include="Base\ShopeMappingDalBase.cs" />
+    <Compile Include="Base\TenantDalBase.cs" />
+    <Compile Include="Base\TreatmentInvoiceDetailDalBase.cs" />
+    <Compile Include="Base\TreatmentPaymentDalBase.cs" />
+    <Compile Include="Base\UserAccessDalBase.cs" />
+    <Compile Include="Base\UserDalBase.cs" />
+    <Compile Include="Base\UserGroupDalBase.cs" />
+    <Compile Include="Base\UserRoleDalBase.cs" />
+    <Compile Include="Base\UserRoleMappingDalBase.cs" />
+    <Compile Include="Base\UsersDalBase.cs" />
+    <Compile Include="BillDetailDal.cs" />
+    <Compile Include="BillMasterDal.cs" />
+    <Compile Include="ChairListDal.cs" />
+    <Compile Include="CommissionSetupDal.cs" />
+    <Compile Include="CompanyDal.cs" />
+    <Compile Include="CorporationsDal.cs" />
+    <Compile Include="DoctorDal.cs" />
+    <Compile Include="DueInstallmentDal.cs" />
+    <Compile Include="EmployeeDal.cs" />
+    <Compile Include="FormListDal.cs" />
+    <Compile Include="LateChargeDal.cs" />
+    <Compile Include="ListTableDal.cs" />
+    <Compile Include="MarketDal.cs" />
+    <Compile Include="PatientDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptDetailDal.cs" />
+    <Compile Include="ReceiptMasterDal.cs" />
+    <Compile Include="ServiceDal.cs" />
+    <Compile Include="ServiceInvoiceMasterDal.cs" />
+    <Compile Include="ShopCategoryDal.cs" />
+    <Compile Include="ShopDal.cs" />
+    <Compile Include="ShopeMappingDal.cs" />
+    <Compile Include="SqlServerConnection.cs" />
+    <Compile Include="TenantDal.cs" />
+    <Compile Include="TreatmentInvoiceDetailDal.cs" />
+    <Compile Include="TreatmentPaymentDal.cs" />
+    <Compile Include="UserAccessDal.cs" />
+    <Compile Include="UserDal.cs" />
+    <Compile Include="UserGroupDal.cs" />
+    <Compile Include="UserRoleDal.cs" />
+    <Compile Include="UserRoleMappingDal.cs" />
+    <Compile Include="UsersDal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

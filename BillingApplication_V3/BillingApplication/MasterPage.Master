@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+    Inherits="WebApp.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <base target="_self" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Open+Sans+Condensed:300,700"
+        rel="stylesheet" />
+    <link href="Styles/default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="Styles/fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="Styles/menu.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script runat="server">
+        public string GetClass(string page)
+        {
+            if (this.Request.Url.ToString().ToLower().Contains(page.ToLower())) return "current_page_item";
+            else return "link";
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="logo" class="containerTop">
+        <h1>
+            <span class="icon icon-lock icon-size"></span><a href="default.aspx">Rental Management
+                System</a> <span style="float: right; vertical-align: middle; text-align: right;
+                    padding-top: 25px; font-size: 12px;">
+                    <% if (Session["user"] != null)
+                       { %>
+                    
+                    
+                    <a href="LogIn.aspx?action=logout">LogOut</a>
+                    <% }
+                       else
+                       { %>
+                    <a href="LogIn.aspx">LogIn</a>
+                    <% } %>
+                </span>
+        </h1>
+    </div>
+    <div id="wrapper" class="container">
+        <div id="cssmenu" runat="server">
+            <asp:Literal ID="ltrlMenu" runat="server"></asp:Literal>
+            <div style="clear: both">
+            </div>
+        </div>
+        <div id="three-column" class="container">
+            <div>
+                <span id="spanUser" class="arrow-down" runat="server"></span>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <%--<div id="wrapper1" class="container">
+        <div id="cssmenu1" runat="server">
+            <ul>
+                <li><a href="Default.aspx" accesskey="1" title=""><span>হোম</span></a></li>
+                <li class='has-sub'><a href="#" accesskey="2" title=""><span>দোকান</span></a>
+                    <ul>
+                        <li><a href="ShopCategoryEntry.aspx" accesskey="2" title=""><span>দোকানের শ্রেণী বিভাগ</span></a></li>
+                        <li><a href="ShopInfo.aspx" accesskey="2" title=""><span>দোকানের তথ্য</span></a></li>
+                        <li><a href="ShopList.aspx" accesskey="2" title=""><span>দোকানের তালিকা</span></a></li>
+                    </ul>
+                </li>
+                <li class='has-sub'><a href="#" accesskey="3" title=""><span>ভাড়াটিয়া</span></a>
+                    <ul>
+                        <li><a href="TenantInfo.aspx" accesskey="3" title=""><span>ভাড়াটিয়ার তথ্য</span></a></li>
+                        <li><a href="TenantList.aspx" accesskey="3" title=""><span>ভাড়াটিয়ার তালিকা</span></a></li>
+                        <li><a href="DueList.aspx" accesskey="3" title=""><span>বকেয়া তালিকা</span></a></li>
+                    </ul>
+                </li>
+                <li class='has-sub'><a href="#" accesskey="4" title=""><span>বিল</span></a>
+                    <ul>
+                        <li><a href="GenerateBill.aspx" accesskey="4" title=""><span>বিল জেনারেট</span></a></li>
+                        <li><a href="BillRegister.aspx" accesskey="4" title=""><span>বিল রেজিস্ট্রার</span></a></li>
+                        <li><a href="BillPayment.aspx" accesskey="4" title=""><span>টাকা গ্রহণ</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+    </div>--%>
+    <div id="copyright">
+        
+            Copyright (c) 2014 Balancika Outsourcing</p>
+    </div>
+    </form>
+</body>
+</html>

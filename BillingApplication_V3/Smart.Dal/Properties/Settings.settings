@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Smart.Dal.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SQLConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source =  SmartTech\SQLEXPRESS; User Id = sa; Password=can722count; Initial Catalog = ShopBillingDB; </Value>
+    </Setting>
+    <Setting Name="SQLConnectionStringHajiganj" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source =  NATIONALCOMPUTE\SQLEXPRESS; User Id = sa; Password=hajigonj12#; Initial Catalog = ShopBillingDb; </Value>
+    </Setting>
+    <Setting Name="SQLConnectionStringZia" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source =  localhost\sqlexpress; User Id = SUL; Password=Pass4App29; Initial Catalog =ShopBillingBD; </Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

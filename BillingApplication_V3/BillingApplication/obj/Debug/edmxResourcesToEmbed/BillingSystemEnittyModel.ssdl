@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShopBillingDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ShopBillingDBModelStoreContainer">
+    <EntitySet Name="BillDetail" EntityType="ShopBillingDBModel.Store.BillDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BillMaster" EntityType="ShopBillingDBModel.Store.BillMaster" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Market" EntityType="ShopBillingDBModel.Store.Market" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ReceiptDetail" EntityType="ShopBillingDBModel.Store.ReceiptDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ReceiptMaster" EntityType="ShopBillingDBModel.Store.ReceiptMaster" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Shop" EntityType="ShopBillingDBModel.Store.Shop" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ShopeMapping" EntityType="ShopBillingDBModel.Store.ShopeMapping" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tenant" EntityType="ShopBillingDBModel.Store.Tenant" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="BillDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BillMasterId" Type="bigint" Nullable="false" />
+    <Property Name="ShopId" Type="bigint" Nullable="false" />
+    <Property Name="MonthlyRent" Type="numeric" Scale="2" />
+    <Property Name="Advance" Type="numeric" Scale="2" />
+    <Property Name="ServiceCharge" Type="numeric" Scale="2" />
+    <Property Name="PreviousDue" Type="numeric" Scale="2" />
+    <Property Name="TotalAmount" Type="numeric" Scale="2" />
+  </EntityType>
+  <EntityType Name="BillMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BillNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MarketId" Type="int" Nullable="false" />
+    <Property Name="TenantId" Type="bigint" Nullable="false" />
+    <Property Name="BillDate" Type="date" />
+    <Property Name="GenerateTime" Type="datetime" />
+    <Property Name="BillMonth" Type="int" />
+    <Property Name="BillYear" Type="int" />
+    <Property Name="GenerateBy" Type="int" />
+    <Property Name="ApprovedBy" Type="int" />
+    <Property Name="TotalAmount" Type="numeric" Scale="2" />
+    <Property Name="Payment" Type="numeric" Scale="2" />
+    <Property Name="Due" Type="numeric" Precision="19" Scale="2" StoreGeneratedPattern="Computed" />
+    <Property Name="IsClosed" Type="nchar" MaxLength="10" />
+    <Property Name="ClosedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="Market">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MarketName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="EstablishDate" Type="date" />
+    <Property Name="InCharge" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="ReceiptDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" />
+    <Property Name="ReceiptMasterId" Type="bigint" />
+    <Property Name="BillMasterId" Type="bigint" />
+    <Property Name="BillDetailId" Type="bigint" />
+    <Property Name="BillAmount" Type="numeric" Scale="2" />
+    <Property Name="PaymentAmount" Type="numeric" Scale="2" />
+    <Property Name="Due" Type="numeric" Precision="19" Scale="2" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="ReceiptMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ReceiptNo" Type="bigint" Nullable="false" />
+    <Property Name="ReceiptDate" Type="datetime" />
+    <Property Name="ReceivedBy" Type="int" />
+    <Property Name="TotalAmount" Type="numeric" Scale="2" />
+  </EntityType>
+  <EntityType Name="Shop">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MarketId" Type="int" />
+    <Property Name="ShopNo" Type="int" />
+    <Property Name="ShopType" Type="nvarchar" MaxLength="50" />
+    <Property Name="SpaceInSqFt" Type="numeric" Scale="2" />
+    <Property Name="MonthlyRent" Type="numeric" Scale="2" />
+    <Property Name="AdvanceAmount" Type="numeric" Scale="2" />
+    <Property Name="ServiceCharge" Type="numeric" Scale="2" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="ShopeMapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MarketId" Type="int" />
+    <Property Name="TenantId" Type="bigint" Nullable="false" />
+    <Property Name="ShopeId" Type="bigint" Nullable="false" />
+    <Property Name="MonthlyRent" Type="numeric" Scale="2" />
+    <Property Name="ServiceCharge" Type="numeric" Scale="2" />
+    <Property Name="Advance" Type="numeric" Scale="2" />
+    <Property Name="ContractDate" Type="date" />
+    <Property Name="ContractValidYear" Type="int" />
+  </EntityType>
+  <EntityType Name="Tenant">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TenantName" Type="nvarchar" MaxLength="250" />
+    <Property Name="FathersNames" Type="nvarchar" MaxLength="250" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="Advance" Type="numeric" Scale="2" />
+    <Property Name="ContractDate" Type="date" />
+    <Property Name="ContractValidityYears" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="OutstandingAmount" Type="numeric" Scale="2" />
+    <Property Name="LastBillNo" Type="bigint" />
+    <Property Name="LastPaymentId" Type="bigint" />
+  </EntityType>
+</Schema>

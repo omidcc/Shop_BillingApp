@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70D58940-9329-4856-9BFA-650DA81DB3AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Smart.Bll</RootNamespace>
+    <AssemblyName>Smart.Bll</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountBalance.cs" />
+    <Compile Include="AppFunctionality.cs" />
+    <Compile Include="ApplicationSetup.cs" />
+    <Compile Include="AppModule.cs" />
+    <Compile Include="Appointment.cs" />
+    <Compile Include="AppPermission.cs" />
+    <Compile Include="Base\AccountBalanceBase.cs" />
+    <Compile Include="Base\AppFunctionalityBase.cs" />
+    <Compile Include="Base\ApplicationSetupBase.cs" />
+    <Compile Include="Base\AppModuleBase.cs" />
+    <Compile Include="Base\AppointmentBase.cs" />
+    <Compile Include="Base\AppPermissionBase.cs" />
+    <Compile Include="Base\BillDetailBase.cs" />
+    <Compile Include="Base\BillMasterBase.cs" />
+    <Compile Include="Base\ChairListBase.cs" />
+    <Compile Include="Base\CommissionSetupBase.cs" />
+    <Compile Include="Base\CompanyBase.cs" />
+    <Compile Include="Base\CorporationsBase.cs" />
+    <Compile Include="Base\DoctorBase.cs" />
+    <Compile Include="Base\DueInstallmentBase.cs" />
+    <Compile Include="Base\EmployeeBase.cs" />
+    <Compile Include="Base\FormListBase.cs" />
+    <Compile Include="Base\LateChargeBase.cs" />
+    <Compile Include="Base\ListTableBase.cs" />
+    <Compile Include="Base\MarketBase.cs" />
+    <Compile Include="Base\PatientBase.cs" />
+    <Compile Include="Base\ReceiptDetailBase.cs" />
+    <Compile Include="Base\ReceiptMasterBase.cs" />
+    <Compile Include="Base\ServiceBase.cs" />
+    <Compile Include="Base\ServiceInvoiceMasterBase.cs" />
+    <Compile Include="Base\ShopBase.cs" />
+    <Compile Include="Base\ShopCategoryBase.cs" />
+    <Compile Include="Base\ShopeMappingBase.cs" />
+    <Compile Include="Base\TenantBase.cs" />
+    <Compile Include="Base\TreatmentInvoiceDetailBase.cs" />
+    <Compile Include="Base\TreatmentPaymentBase.cs" />
+    <Compile Include="Base\UserAccessBase.cs" />
+    <Compile Include="Base\UserGroupBase.cs" />
+    <Compile Include="Base\UserRoleBase.cs" />
+    <Compile Include="Base\UserRoleMappingBase.cs" />
+    <Compile Include="Base\UsersBase.cs" />
+    <Compile Include="BillDetail.cs" />
+    <Compile Include="BillMaster.cs" />
+    <Compile Include="ChairList.cs" />
+    <Compile Include="CommissionSetup.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Corporations.cs" />
+    <Compile Include="Doctor.cs" />
+    <Compile Include="DueInstallment.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="FormList.cs" />
+    <Compile Include="LateCharge.cs" />
+    <Compile Include="ListTable.cs" />
+    <Compile Include="Market.cs" />
+    <Compile Include="Patient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicVariables.cs" />
+    <Compile Include="ReceiptDetail.cs" />
+    <Compile Include="ReceiptMaster.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="ServiceInvoiceMaster.cs" />
+    <Compile Include="Shop.cs" />
+    <Compile Include="ShopCategory.cs" />
+    <Compile Include="ShopeMapping.cs" />
+    <Compile Include="Tenant.cs" />
+    <Compile Include="TreatmentInvoiceDetail.cs" />
+    <Compile Include="TreatmentPayment.cs" />
+    <Compile Include="UserAccess.cs" />
+    <Compile Include="UserGroup.cs" />
+    <Compile Include="UserRole.cs" />
+    <Compile Include="UserRoleMapping.cs" />
+    <Compile Include="Users.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Smart.Dal\Smart.Dal.csproj">
+      <Project>{4AD68FB4-6B3D-46EC-8B64-9D261C0384E1}</Project>
+      <Name>Smart.Dal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

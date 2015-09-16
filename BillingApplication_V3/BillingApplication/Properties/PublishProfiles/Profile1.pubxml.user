@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2014-08-01T17:06:43.6933872+06:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\Users\Zobayer\Desktop\PublishVersion</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>08/21/2014 14:12:20</publishTime>
+    </File>
+    <File Include="Account/ChangePassword.aspx">
+      <publishTime>08/21/2014 14:13:11</publishTime>
+    </File>
+    <File Include="Account/ChangePasswordSuccess.aspx">
+      <publishTime>08/21/2014 14:15:45</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>08/21/2014 14:16:11</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>08/21/2014 14:16:54</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>07/02/2014 04:55:39</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/0.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/1.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/2.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/3.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/4.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/5.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/6.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/7.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/8.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/9.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/A.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/B.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/C.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/D.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/E.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/F.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/G.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/H.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/I.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/J.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/K.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/L.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/M.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/N.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/O.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/P.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/Q.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/R.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/S.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/T.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/U.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/V.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/W.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/X.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/Y.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="App_Data/RadCaptcha/Z.wav">
+      <publishTime>10/15/2013 12:15:34</publishTime>
+    </File>
+    <File Include="BillRegister.aspx">
+      <publishTime>08/27/2014 14:12:58</publishTime>
+    </File>
+    <File Include="bin/BillingApplication.dll">
+      <publishTime>08/27/2014 16:21:15</publishTime>
+    </File>
+    <File Include="bin/BillingApplication.pdb">
+      <publishTime>08/27/2014 16:21:15</publishTime>
+    </File>
+    <File Include="bin/Smart.Bll.dll">
+      <publishTime>08/27/2014 16:21:12</publishTime>
+    </File>
+    <File Include="bin/Smart.Bll.pdb">
+      <publishTime>08/27/2014 16:21:12</publishTime>
+    </File>
+    <File Include="bin/Smart.Dal.dll">
+      <publishTime>08/27/2014 16:21:11</publishTime>
+    </File>
+    <File Include="bin/Smart.Dal.pdb">
+      <publishTime>08/27/2014 16:21:11</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>10/14/2013 12:36:50</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>10/14/2013 12:36:50</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>07/02/2014 04:58:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>07/02/2014 04:58:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/02/2014 04:58:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>07/02/2014 04:58:01</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>08/01/2014 12:02:04</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/02/2014 04:58:01</publishTime>
+    </File>
+    <File Include="GenerateBill.aspx">
+      <publishTime>08/22/2014 16:24:05</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/02/2014 04:55:39</publishTime>
+    </File>
+    <File Include="images/arrows.png">
+      <publishTime>07/17/2014 01:17:06</publishTime>
+    </File>
+    <File Include="images/bg01.png">
+      <publishTime>07/17/2014 01:17:06</publishTime>
+    </File>
+    <File Include="images/bullets.png">
+      <publishTime>07/17/2014 01:17:06</publishTime>
+    </File>
+    <File Include="images/content-bg.jpg">
+      <publishTime>07/17/2014 01:17:06</publishTime>
+    </File>
+    <File Include="images/facebook.png">
+      <publishTime>07/17/2014 01:17:06</publishTime>
+    </File>
+    <File Include="images/gplus.png">
+      <publishTime>07/17/2014 01:17:06</publishTime>
+    </File>
+    <File Include="images/loading.gif">
+      <publishTime>07/17/2014 01:17:06</publishTime>
+    </File>
+    <File Include="images/seperator.png">
+      <publishTime>07/17/2014 01:17:06</publishTime>
+    </File>
+    <File Include="images/style.css">
+      <publishTime>07/17/2014 01:17:06</publishTime>
+    </File>
+    <File Include="images/template.css">
+      <publishTime>07/17/2014 01:17:06</publishTime>
+    </File>
+    <File Include="images/twitter.png">
+      <publishTime>07/17/2014 01:17:06</publishTime>
+    </File>
+    <File Include="MasterPage.Master">
+      <publishTime>08/22/2014 19:17:00</publishTime>
+    </File>
+    <File Include="MoneyReceipt.aspx">
+      <publishTime>07/17/2014 05:58:22</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/02/2014 04:58:02</publishTime>
+    </File>
+    <File Include="ReportView.aspx">
+      <publishTime>08/27/2014 06:20:42</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/02/2014 04:58:01</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>07/02/2014 04:58:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>07/02/2014 04:55:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>07/02/2014 04:55:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>07/02/2014 04:55:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.0-vsdoc.js">
+      <publishTime>07/02/2014 04:57:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.0.js">
+      <publishTime>07/02/2014 04:57:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.0.min.js">
+      <publishTime>07/02/2014 04:57:58</publishTime>
+    </File>
+    <File Include="ShopCategoryEntry.aspx">
+      <publishTime>08/27/2014 03:12:53</publishTime>
+    </File>
+    <File Include="ShopInfo.aspx">
+      <publishTime>07/26/2014 04:11:34</publishTime>
+    </File>
+    <File Include="ShopList.aspx">
+      <publishTime>08/27/2014 03:14:35</publishTime>
+    </File>
+    <File Include="Styles/default.css">
+      <publishTime>08/22/2014 10:04:44</publishTime>
+    </File>
+    <File Include="Styles/fonts.css">
+      <publishTime>08/21/2014 14:13:17</publishTime>
+    </File>
+    <File Include="Styles/menu.css">
+      <publishTime>08/22/2014 10:08:36</publishTime>
+    </File>
+    <File Include="Styles/pdf.css">
+      <publishTime>07/17/2014 01:16:33</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>07/17/2014 01:16:34</publishTime>
+    </File>
+    <File Include="TenantInfo.aspx">
+      <publishTime>08/27/2014 14:06:40</publishTime>
+    </File>
+    <File Include="TenantList.aspx">
+      <publishTime>08/27/2014 16:19:52</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/27/2014 16:21:22</publishTime>
+    </File>
+    <File Include="WebForm1.aspx">
+      <publishTime>07/17/2014 01:18:39</publishTime>
+    </File>
+    <File Include="WebForm2.aspx">
+      <publishTime>08/26/2014 07:47:26</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
